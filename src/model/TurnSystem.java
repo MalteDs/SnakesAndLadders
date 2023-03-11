@@ -20,5 +20,3 @@ public class TurnSystem {
 	public void deleteAll() {
 		throw new UnsupportedOperationException();
 	}
-}
-

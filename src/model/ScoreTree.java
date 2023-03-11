@@ -36,4 +36,3 @@ public class ScoreTree<T extends Node> {
 		throw new UnsupportedOperationException();
 	}
 }
-

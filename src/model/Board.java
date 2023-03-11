@@ -147,7 +147,3 @@ public class Board<T extends Node> implements Iterable<TileNode> {
 		deleteAll((TileNode) node.getNext());
 		node.setNext(null);
 	}
-
-
-
-}

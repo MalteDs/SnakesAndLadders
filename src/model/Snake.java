@@ -5,5 +5,3 @@ public class Snake extends GameObject{
         super(aId);
     }
 }
-
-

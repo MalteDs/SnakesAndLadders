@@ -11,7 +11,6 @@ public class TreeNode extends Node implements Comparable<TreeNode>{
         this.score = score;
     }
 
-
     public Node getLeft() {
         return left;
     }
@@ -32,12 +31,8 @@ public class TreeNode extends Node implements Comparable<TreeNode>{
         return score;
     }
 
-
     @Override
     public int compareTo(TreeNode o) {
         return Integer.compare(this.getScore(), o.getScore());
     }
-
-
 }
-

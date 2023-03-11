@@ -4,6 +4,7 @@ public abstract class Node {
 
     protected Node next;
     private Player player;
+    
 	private Player[] players = new Player[3];
 
 	public Node getNext() {
@@ -33,8 +34,4 @@ public abstract class Node {
 	protected Player[] getPlayers() {
 		return players;
 	}
-
-
-
 }
-

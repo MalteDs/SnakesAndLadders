@@ -11,7 +11,6 @@ public class PlayerList<T extends Node> {
 
 	public void setHead(Node node) {
 		head = node;
-	}
 
 	public void addPlayer() {
 		throw new UnsupportedOperationException();
@@ -32,5 +31,3 @@ public class PlayerList<T extends Node> {
 	public void setTail(Node tail) {
 		this.tail = tail;
 	}
-}
-

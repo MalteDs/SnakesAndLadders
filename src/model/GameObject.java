@@ -1,4 +1,3 @@
-
 package model;
 
 public class GameObject {
@@ -24,7 +23,6 @@ public class GameObject {
 
 	public void setEndPoint(int aEndPoint) {
 		this.endPoint = aEndPoint;
-	}
 
 	public void getAttribute() {
 		throw new UnsupportedOperationException();
@@ -35,6 +33,7 @@ public class GameObject {
 	}
 
 	public String getId() {
+
 		return this.id;
 	}
 
@@ -42,4 +41,3 @@ public class GameObject {
 		this.id = aId;
 	}
 }
-

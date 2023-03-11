@@ -1,6 +1,7 @@
 package model;
 
 public class Player {
+
 	private int position;
 	private final char symbol;
 
@@ -25,6 +26,3 @@ public class Player {
 		position += steps;
 	}
 }
-
-
-
