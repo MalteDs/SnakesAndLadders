@@ -1,26 +1,28 @@
 package model;
 
 public class Player {
-	private char id;
-	private int pos = 1;
 
-	public Player(char id) {
-		throw new UnsupportedOperationException();
+	private int position;
+	private final char symbol;
+
+	public Player(int startingPosition, char symbol) {
+		this.position = startingPosition;
+		this.symbol = symbol;
 	}
 
-	public char getID() {
-		throw new UnsupportedOperationException();
+	public int getPosition() {
+		return position;
 	}
 
-	public void setID(char id) {
-		throw new UnsupportedOperationException();
+	public void setPosition(int position) {
+		this.position = position;
 	}
 
-	public int getPos() {
-		return this.pos;
+	public char getSymbol() {
+		return symbol;
 	}
 
-	public void setPos(int aPos) {
-		this.pos = aPos;
+	public void move(int steps) {
+		position += steps;
 	}
 }

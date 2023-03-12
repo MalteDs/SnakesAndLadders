@@ -1,27 +1,28 @@
+package model;
+
 public class GameObject {
-	private int _startPoint;
-	private int _endPoint;
-	private String _id;
+	private int startPoint;
+	private int endPoint;
+	private String id;
 
 	public GameObject(String aId) {
-		throw new UnsupportedOperationException();
+		this.id = aId;
 	}
 
 	public int getStartPoint() {
-		return this._startPoint;
+		return this.startPoint;
 	}
 
 	public void setStartPoint(int aStartPoint) {
-		this._startPoint = aStartPoint;
+		this.startPoint = aStartPoint;
 	}
 
 	public int getEndPoint() {
-		return this._endPoint;
+		return this.endPoint;
 	}
 
 	public void setEndPoint(int aEndPoint) {
-		this._endPoint = aEndPoint;
-	}
+		this.endPoint = aEndPoint;
 
 	public void getAttribute() {
 		throw new UnsupportedOperationException();
@@ -32,10 +33,11 @@ public class GameObject {
 	}
 
 	public String getId() {
-		return this._id;
+
+		return this.id;
 	}
 
 	public void setId(String aId) {
-		this._id = aId;
+		this.id = aId;
 	}
 }

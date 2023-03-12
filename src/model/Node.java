@@ -1,44 +1,37 @@
 package model;
 
-public class Node {
-	private Node x;
-	private Node y;
-	private Player player;
-	private int id;
+public abstract class Node {
 
-	public Node getX() {
-		return this.x;
+    protected Node next;
+    private Player player;
+    
+	private Player[] players = new Player[3];
+
+	public Node getNext() {
+		return next;
 	}
 
-	public void setX(Node x) {
-		this.x = x;
-	}
-
-	public Node getY() {
-		return this.y;
-	}
-
-	public void setY(Node y) {
-		this.y = y;
+	public void setNext(Node next) {
+		this.next = next;
 	}
 
 	public Player getPlayer() {
-		return this.player;
+		return player;
 	}
 
-	public void setPlayer(Player Player) {
-		this.player = Player;
+	public void setPlayer(Player player) {
+		this.player = player;
 	}
 
-	public int getId() {
-		return this.id;
+	public char getPlayerSymbol() {
+		return player.getSymbol();
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void addPlayers(Player player, int index) {
+		players[index] = player;
 	}
 
-	public String getPlayerID() {
-		throw new UnsupportedOperationException();
+	protected Player[] getPlayers() {
+		return players;
 	}
 }

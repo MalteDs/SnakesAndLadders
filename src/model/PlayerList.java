@@ -1,16 +1,16 @@
 package model;
 
-public class PlayerList {
-	private Node root;
+public class PlayerList<T extends Node> {
+
+	private Node head;
 	private Node tail;
 
-	public Node getRoot() {
-		return this.root;
+	public Node getHead() {
+		return this.head;
 	}
 
-	public void setRoot(Node root) {
-		this.root = root;
-	}
+	public void setHead(Node node) {
+		head = node;
 
 	public void addPlayer() {
 		throw new UnsupportedOperationException();
@@ -31,4 +31,3 @@ public class PlayerList {
 	public void setTail(Node tail) {
 		this.tail = tail;
 	}
-}

@@ -1,28 +1,36 @@
 package model;
 
-public class ScoreTree {
-	private Node right;
-	private Node left;
+public class ScoreTree<T extends Node> {
 
-	public Node getRight() {
-		return this.right;
+	private TreeNode root;
+
+	public ScoreTree() {
+		this.root = null;
 	}
 
-	public void setRight(Node aRight) {
-		this.right = aRight;
+	public TreeNode getRoot() {
+		return this.root;
 	}
 
-	public Node getLeft() {
-		return this.left;
+	public void setRoot(TreeNode root) {
+		this.root = root;
 	}
 
-	public void setLeft(Node aLeft) {
-		this.left = aLeft;
+	public String displayDescending() {
+		StringBuilder sb = new StringBuilder();
+		displayDescending(root, sb);
+		return sb.toString();
 	}
 
-	public void sort() {
-		throw new UnsupportedOperationException();
+	private void displayDescending(TreeNode node, StringBuilder sb) {
+		if (node == null) {
+			return;
+		}
+		displayDescending((TreeNode) node.getRight(), sb);
+		sb.append("Player ").append(node.getPlayerSymbol()).append(": ").append(node.getScore()).append("\n");
+		displayDescending((TreeNode) node.getLeft(), sb);
 	}
+
 
 	public Node deleteAll() {
 		throw new UnsupportedOperationException();

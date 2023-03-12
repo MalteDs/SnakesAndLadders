@@ -1,7 +1,8 @@
 package model;
 
 public class TurnSystem {
-	private PlayerList players;
+
+	private PlayerList<PlayerNode> players;
 	private Node currentPlayer;
 
 	public void addPlayer() {
@@ -19,4 +20,3 @@ public class TurnSystem {
 	public void deleteAll() {
 		throw new UnsupportedOperationException();
 	}
-}
